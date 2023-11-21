@@ -36,13 +36,13 @@ public class CarrosControl {
     }
 
     // Método para cadastrar um novo carro no banco de dados
-    public void cadastrar(String marca, String modelo, String ano, String placa, String valor, String string) {
+    public void cadastrar(String marca, String modelo, String ano, String placa, String valor) {
         new CarrosDAO().cadastrar(marca, modelo, ano, placa, valor);// Chama o método de atualização no banco de dados
         atualizarTabela();// Atualiza a tabela de exibição após a atualização
     }
 
     // Método para atualizar os dados de um carro no banco de dados
-    public void atualizar(String marca, String modelo, String ano, String placa, String valor, String string) {
+    public void atualizar(String marca, String modelo, String ano, String placa, String valor ) {
         new CarrosDAO().atualizar(marca, modelo, ano, placa, valor);
         // Chama o método de atualização no banco de dados
         atualizarTabela(); // Atualiza a tabela de exibição após a atualização
