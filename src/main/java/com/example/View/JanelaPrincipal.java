@@ -14,10 +14,16 @@ add(JTPane);
 CarrosPainel tab1 = new CarrosPainel();
 JTPane.add("Carros", tab1);
 setBounds(100, 100, 600, 600);
-setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
 
-Vendasview tab2 = new Vendasview();
-JTPane.add("Vendas", tab2);
+ClientesPainel tab2 = new ClientesPainel(); 
+JTPane.add("Clientes" , tab2);
+setBounds(100, 100, 600, 600);
+setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
+
+
+Vendasview tab3 = new Vendasview();
+JTPane.add("Vendas", tab3);
 setBounds(100, 100, 600, 600);
 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
 
